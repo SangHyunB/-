@@ -73,12 +73,12 @@ const TodoList = () => {
 
     return (
         <>
-            <Box textAlign="center" my={4}>
-            <Box display="flex" alignItems="center" justifyContent="center">
-                    <CheckBoxIcon />
+            <Box textAlign="center" padding={4} sx={{backgroundColor:"#81F7F3"}} >
+            <Box display="flex" alignItems="center" justifyContent="center" >
+                    <CheckBoxIcon fontSize="large"/>
                     <Typography variant="h3" ml={1}>Todo List</Typography>
                 </Box>
-                <Button variant="contained" color="primary" onClick={() => setModal(true)}>
+                <Button variant="contained" color="primary" onClick={() => setModal(true)} sx={{borderRadius: 3}} >
                     Create Task
                 </Button>
             </Box>
@@ -107,9 +107,7 @@ const TodoList = () => {
                                 fullWidth
                                 displayEmpty
                             >
-                                <MenuItem value="none">
-                                    
-                                </MenuItem>
+                                <MenuItem value="none">none</MenuItem>
                                 <MenuItem value="일">일</MenuItem>
                                 <MenuItem value="여가">여가</MenuItem>
                                 <MenuItem value="숙제">숙제</MenuItem>
